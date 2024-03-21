@@ -26,7 +26,13 @@ const Countdown = () => {
 
   return (
     <div className="mb-4 text-5xl tracking-tight font-extrabold text-white text-center">
-        {isFinished ? <img src="ruta-de-la-imagen" alt="imagen" /> : countdown}
+        {isFinished ? 
+        <>
+        <h2 className="text-5xl tracking-tight font-extrabold text-white text-center">Feliz Cumpleaños</h2>
+        <img src="/public/go-karts.jpg" alt="imagen Karts" />
+        <p>🏎️ Efectivamente nos vamos a los karts!! 🏎️</p>
+        </>
+         : countdown}
         </div>
   )
 }

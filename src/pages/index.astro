@@ -1,13 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
-// import Countdown from '../components/Countdown.astro'
 import Countdown from '../components/Countdown.jsx'
+import DatePickerComponent from '../components/DaterPickerComponent'
 ---
 
 <Layout title="Bienvenido a la cuenta atrás para tu cumpleaños">
 	<main>
 		<Header />
             <Countdown client:load/>
+			<DatePickerComponent client:only/>
 	</main>
 </Layout>

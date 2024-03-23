@@ -32,10 +32,12 @@ const Countdown = () => {
         <h2 className="text-5xl tracking-tight font-extrabold text-white text-center">Feliz Cumpleaños</h2>
         <img src="/public/go-karts.jpg" alt="imagen Karts" />
         <p>🏎️ Efectivamente nos vamos a los karts!! 🏎️</p>
-        < DatePickerComponent />
+        <h3>Selecciona el día que quieres ir</h3>
+        <DatePickerComponent/>
         </>
          : countdown}
         </div>
+       
   )
 }
 

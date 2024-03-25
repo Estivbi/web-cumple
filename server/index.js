@@ -8,11 +8,11 @@ import pkg from 'pg';
 const app = express();
 const { Pool } = pkg;
 const pool = new Pool({
-	user: 'postgres',
-	host: 'localhost',
-	database: 'postgres',
-	password: 'Obi1kenobi',
-	port: 5432,
+	user: process.env.DB_USER,
+	host: process.env.DB_HOST,
+	database: process.env.DB_NAME,
+	password: process.env.DB_PASSWORD,
+	port: process.env.DB_PORT,
 });
 
 app.use(express.json());

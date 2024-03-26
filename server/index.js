@@ -4,22 +4,22 @@
 import express from 'express';
 import cors from 'cors';
 import pkg from 'pg';
-
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const { Pool } = pkg;
 const pool = new Pool({
 	user: process.env.DB_USER,
-	host: process.env.DB_HOST,
-	database: process.env.DB_NAME,
 	password: process.env.DB_PASSWORD,
+	host: process.env.DB_HOST,
 	port: process.env.DB_PORT,
+	database: process.env.DB_NAME,
 });
 
 app.use(express.json());
 // app.use(cors());
-app.use(cors({origin: 'http://localhost:4321'}))
+app.use(cors({origin: 'http://localhost:4321', 'https://web-cumple.vercel.app'}))
 
 // Ruta para guardar la fecha seleccionada por el usuario "api"
 app.post('/api/save-date', (req, res) => {

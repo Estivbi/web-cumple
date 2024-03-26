@@ -5,6 +5,8 @@ import express from 'express';
 import cors from 'cors';
 import pkg from 'pg';
 
+require('dotenv').config();
+
 const app = express();
 const { Pool } = pkg;
 const pool = new Pool({

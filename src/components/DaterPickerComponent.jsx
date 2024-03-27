@@ -11,7 +11,7 @@ const DatePickerComponent = () => {
 	const handleDateChange = (date) => {
 		setSelectedDate(date);
 		// Enviar la fecha seleccionada al servidor usa axios para hacer una petición HTTP
-		axios.post(`https://web-cumple-seven.vercel.app/api/save-date`, { date: date.toString() })
+		axios.post(`http://localhost:5000/api/save-date`, { date: date.toString() })
       .then(response => console.log(response))
       .catch(error => console.log(error));
   };

@@ -10,11 +10,11 @@ dotenv.config();
 const app = express();
 const { Pool } = pkg;
 const pool = new Pool({
-	user: process.env.PGUSER,
-	password: process.env.PGPASSWORD,
-	host: process.env.PGHOST,
-	port: process.env.PGPORT,
-	database: process.env.POSTGRES_DB,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASSWORD,
+	host: process.env.DB_HOST,
+	port: process.env.DB_PORT,
+	database: process.env.DB_NAME,
 	// connectionString: process.env.DATABASE_URL,
 });
 
@@ -37,5 +37,5 @@ app.post('/api/save-date', (req, res) => {
 	});
 });
 
-// Ruta para servir la aplicación web
+// Ruta para servir el servidor backend
 app.listen(5000, () => console.log('Server running en http://localhost:5000/api/save-date'));

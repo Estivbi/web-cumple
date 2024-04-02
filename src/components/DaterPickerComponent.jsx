@@ -30,7 +30,7 @@ const DatePickerComponent = () => {
 				placeholderText="Selecciona una fecha"
 			/>
 	</div>
-		<div className='font-extrabold text-gray-500 rounded sm:text-xl bg-white mt-4 mb-10 w-full text-center w-[200px]'>
+		<div className='font-extrabold text-gray-500 rounded sm:text-xl bg-white mt-4 mb-10 text-center w-[200px]'>
 			<button
 				onClick={() => setIsVisible(!isVisible)}
 				className='transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110'

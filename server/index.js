@@ -15,12 +15,12 @@ const pool = new Pool({
 	host: process.env.DB_HOST,
 	port: process.env.DB_PORT,
 	database: process.env.DB_NAME,
-	connectionString: process.env.DATABASE_URL,
+	// connectionString: process.env.DATABASE_URL, //  process.env.POSTGRES_URL
 });
 
 app.use(express.json());
 // app.use(cors());
-app.use(cors({origin: ['http://localhost:4321', 'https://web-cumple-seven.vercel.app']}))
+app.use(cors({origin: ['http://localhost:4321', 'https://web-cumple-9c3hx4gk2-estivbis-projects.vercel.app/']}))
 
 // Ruta para guardar la fecha seleccionada por el usuario "api"
 app.post('/api/save-date', (req, res) => {

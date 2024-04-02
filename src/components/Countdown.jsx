@@ -6,7 +6,7 @@ const Countdown = () => {
   const [isFinished, setIsFinished] = useState(false)
 
   useEffect(() => {
-    const targetDate = new Date("2024-03-15T00:00:00")
+    const targetDate = new Date("2024-04-15T00:00:00")
     const intervalID = setInterval(() => {
       const now = new Date()
       const distance = targetDate.getTime() - now.getTime()

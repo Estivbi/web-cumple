@@ -20,7 +20,7 @@ const pool = new Pool({
 
 app.use(express.json());
 // app.use(cors());
-app.use(cors({origin: ['http://localhost:4321', 'https://web-cumple-9c3hx4gk2-estivbis-projects.vercel.app/']}))
+app.use(cors({origin: ['http://localhost:4321', 'https://web-cumple.vercel.app/']}))
 
 // Ruta para guardar la fecha seleccionada por el usuario "api"
 app.post('/api/save-date', (req, res) => {

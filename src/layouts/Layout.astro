@@ -26,17 +26,10 @@ const { title } = Astro.props;
     --color-background: #13151a;
     --color-text: white;
   }
-  @media (prefers-color-scheme: light) {
-    :root {
-      --color-background: white;
-      --color-text: black;
-    }
-  }
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: var(--color-background);
     	color: var(--color-text);
 		background-size: 224px;
-		color-scheme: dark light;
 	}
 </style>

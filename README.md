@@ -69,7 +69,7 @@ Este proyecto utiliza las siguientes librerías:
 
 ## Despliegue
 
-Este proyecto se despliega en Vercel.
+Este proyecto se despliega en Netlify.
 
 ## Licencia
 

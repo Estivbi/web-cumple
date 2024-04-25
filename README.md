@@ -2,6 +2,10 @@
 
 [Web](https://cuenta-atras-cumple.netlify.app)
 
+Esta imagen muestra lo que se ve cuando la cuenta atrás ha finalizado.
+![image](https://github.com/Estivbi/web-cumple/assets/94956228/3cdffcdb-c35b-4837-aa76-2f7276c276a8)
+
+
 ## Descripción
 
 Este proyecto es una página web para practicar con Astro y React desarrollada por Carolina Rodríguez. La página muestra un contador que, cuando finaliza, enseña el regalo que contiene. También tiene un calendario que, cuando se selecciona una fecha, se guarda en la base de datos.
